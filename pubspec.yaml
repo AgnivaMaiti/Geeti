@@ -1,0 +1,36 @@
+name: Geeti
+description: "A lyrics generator app that uses Google's Generative AI to generate lyrics for your favorite songs."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.4 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_gemini: ^2.0.4
+  image_picker: ^1.0.7
+  dash_chat_2: ^0.0.20
+  provider: ^5.0.0
+  google_generative_ai: ^0.4.2
+  flutter_launcher_icons: ^0.13.0
+  flutter_markdown: ^0.6.9
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets\icon\th.jpeg
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets\icon\th.jpeg
